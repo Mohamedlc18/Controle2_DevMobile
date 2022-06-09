@@ -1,7 +1,9 @@
 package com.example.controle2_devmobile;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -34,5 +36,12 @@ public class MainActivity extends AppCompatActivity {
         }
         ArrayAdapter<String> ad=new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,listeCLMS);
         listeCLMS.setAdapter(ad);
+
+
+        }
+    public void Activity2(View view) {
+        Intent i=null;
+        i = new Intent(this, Question8.class);
+        startActivity(i);
+        }
     }
-}
