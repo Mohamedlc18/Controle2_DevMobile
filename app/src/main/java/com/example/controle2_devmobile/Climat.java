@@ -8,6 +8,7 @@ public class Climat {
     private int Température ;
     private int Pourcentage_Nuages ;
 
+
     public Climat() {
     }
 
