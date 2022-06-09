@@ -3,8 +3,10 @@ package com.example.controle2_devmobile;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
 import java.util.ArrayList;
@@ -19,9 +21,11 @@ public class MyDataClimat extends SQLiteOpenHelper {
     public static String COL4 = "Température";
     public static String COL5 = "Pourcentage_Nuages";
 
-    public MyDataClimat(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, name, factory, version);
+    public MyDataClimat(Context c) {
+        super(c, DB_NAME, null,1);
     }
+
+
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
