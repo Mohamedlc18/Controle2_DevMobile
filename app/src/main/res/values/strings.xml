@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Controle2_DevMobile</string>
+
+    <string name="Ville">Ville :</string>
+    <string name="Pays">Pays :</string>
+    <string name="Température">Température :</string>
+    <string name="Pourcentage_Naues">Pourcentage de Nauges :</string>
+
+    <string name="btnEffacer">Effacer</string>
+    <string name="btnEnregistrer">Enregistrer</string>
+
 </resources>
